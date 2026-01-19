@@ -1,0 +1,75 @@
+31/10/23
+implemented a timer function, and setted up basic movement and such
+
+01/11/23
+used core_tool.tools into program, and added surfaces to train_image_loader.py
+
+16/11/23
+implementations:
+- Tried to fix movement animation issue, weird but works better than usual
+- added the background
+
+issues:
+- None 
+
+Stage_3 im thinking needs re-imagining, maybe a bossfight type thing. would be so fun to make and document I think, since just like undertale, I can finally make something worth playing?
+
+stage will go like:
+- player walks and interacts with drunk person
+- drunk person is annoyed and collides with player
+- play cutscene with drunk person and player (a drunk person is approachin you)
+- cut into a new combat mode, consisted of minigames that were used and a new one!
+- new minigame is a platformer and stuff, avoid cracked glass bottles
+- you have to endure this game for around 1 min
+- the game will increasingly get faster and harder as you progress
+- enemy continuosly mocks you with dialouge
+- enemy gets tired and you manage to escape
+
+tonight:
+- design the sprites for the bossfight
+- design the train details (sprites)
+- try to get a moving background and stuff 
+- blit all of these in the correct yeah 
+
+main things need implementing:
+- sprites
+- enemy dialouge and cutscene things
+- difficulty and stuff
+
+17/11/23
+Im sorRY I COULDNTINA HAHNUYTTHING!
+
+19/11/23
+
+- made the sprites for bossfight
+- made some improvements on the map
+- made new character sprite
+
+22/12/23
+implementations:
+- deleted rectangle for speech, didn't feel good abt it
+- made seperate font for the drunk to speak
+- fixed index error when the player pressed space and it registered mult times
+
+issues:
+- collision between the player and the drunk is a bit janky but not too severe 
+
+okay so im in filipines with a terrible mouse, so its gonna be hard to make good sprites so
+i will be making temp sprites and focusing on the actual gameplay. 
+
+NOW WHAT DO I HAVE PLANNED FOR THE GAMEPLAY?
+
+there will be bottles raining down on the player and the box in undertale vibe thing, and the bottles will essentialy
+explode and kill the player. This means that the player must avoid getting hit at all! To defeat the enemy, the player
+has to survive for the time remaining. Has like 2 phases. The player needs to move left right up down amazing. So when
+the enemy has been defeated, the player will go back to map 1, but the enemy will have left and got his buddies. Police
+came into the train and saved the player and wohoo, game ends.
+
+DETAILS:
+
+Enemy attack lasts for 2 mins
+1st phase (1st min): 
+throwing bottles, 3 types of bottles, One has diff explosion radius than the other.
+
+2nd phase (2nd min):
+throwing bottles, faster.
