@@ -1,0 +1,124 @@
+~ 20/10/23
+implemented collision that is from stage_1 
+designed background and sprites
+
+~ 27/10/23
+implemented the popup text with objects around the room
+
+01/10/23
+implemented core_tool functions
+
+06/11/23
+breakdown:
+objects will have mingames assigned to them like last time
+bins - place trash in wrong bin (mouse click and drag stuff)
+toys - destroy toys (prob a spam)
+alarm clock - keep ringing the alarm clock (bar)
+fridge - eat (click all the food in time)
+
+implemented a interactive object class 
+
+looking for a productive day on wednesday! 😁😁
+
+08/11/23
+implementations:
+- added "e to interact" text, and actual reaction when pressed e
+
+10/11/23
+implementations:
+- None
+issues:🌍 LOW BATTERY 
+
+11/11/23
+implementations:
+- made new class for clickable object for click&drag minigame
+- completely made click&drag minigame with no issues! (which is located in core_tools.minigames)
+- added new disable attribute to interactive_object class (to prevent over blitting)
+
+no mentionable issues other than animation too fast (like previously)
+
+development for this stage has been very clean so far, OOP is proving its power and I'm liking it 
+anyway im hoping to get this stage done by wed or tue next week.
+final implementation will have to be done swiftly... (maybe ill just pray deadline increases)
+
+50% complete so far, still need to add:
+- enemies (brother,sister,dad,mom) 
+- noise_meter (prob make it into core_tools.tools from stage_1.classroom_game)
+
+to be fair, enemies can be the same as last stage, just different sprites...
+
+anyway good night gaming
+
+12/11/23
+implementations:
+- fully added click minigame
+- prepared statement for enemy spawn
+
+issues:
+- fridge displaying when interact with fridge then trash...
+
+fr 60% complete, same stuff needed from before
+
+13/11/23
+implementations:
+- fixed issue from before (just need to make interaction tab false cuz kept running)
+- added sprites for enemies
+- added enemy class (not fully implemented)
+
+issues:
+- None
+
+70% complete so far, just need to add:
+- enemy movement & collision
+- enemy difficulty & noise_meter
+- enemy walk sprites 
+- timer at beginning
+- text for initiating dodge thingie
+
+will work on timer and text tmrw or something, movement and stuff is the final stuff i'll do for this 
+anyway, good run 👌
+
+14/11/23
+implementations:
+- added sprite movement
+- added enemy walk sprites 
+- added enemy collision
+- added restart screen
+
+issues:
+- None 
+
+80% complete so far, just need to add:
+- timer at beginning
+- text for initiating dodge stage
+- noise meter and difficulty stuffs
+
+will work on these tmrw, try to finish this prototype and start working on train game. 
+😴
+
+15/11/23
+implementations:
+- added timer at beginning
+- text for initiating dodge state
+
+Issues:
+- None 
+
+90% complete just need to add noise meter
+
+i need to migrate noise_meter into tools and the sprites for it cuz its a bit annoying to copy and paste the same code. probably will do tonight as this may require a lot of re-arragning and stuffs. pretty sure 'noise' doesn't have to be a global var.
+see you tonight 🤤
+
+15/11/23:
+implementations:
+- migrated noise_meter into tools and sprites! 
+- done finish things
+
+major issues:
+- None 
+
+minor issues:
+- if player collides with two walls, the player can walk past one of them
+
+Not really sure what to do with the last minor issue, but will probably come across the solution later on.
+100% complete.
