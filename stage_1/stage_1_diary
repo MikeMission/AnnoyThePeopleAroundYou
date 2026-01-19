@@ -1,0 +1,103 @@
+'''
+Notes:
+
+29/09/23
+Partially implemented the bar minigame, thinking of implementing an instrument class
+to use polymorphism for all the instruments to filter what ones need spam minigame and bar minigame
+can also contain their sprites and other things... (although has to be inside asset_lib)
+
+30/09/23
+Fully implemented the bar minigame, trying to animate the player now, having weird problemsss
+the idea from last time was pointless, and i need to fix animation the next time i come on.
+
+05/09/23
+Partially implemented the animation, thinking of making a way to make the collisions between player 
+and the wall next, stopping movement. Maybe need to think about seperating the walls and the ground
+but not sure if the walls as an image rect would be able to decipher what is a part of the image
+and transparent background. An idea:
+- a function to detect where the player has collided with wall, returns True and variable with pre-position of player when collided
+- use condition (if collide is true) 
+- and reset player's position to the one detected
+
+name ideas:
+wall_collision(player_rect) --> returns true
+
+06/10/23
+didn't change animation, still needs a bit of work. Ignored collisions, waiting to do that for later date.
+partially implemented the spam minigame, needs a timer, time module? pygame clock?
+Thinking about implementing phase 1,2 to differentiate between different game phases when game is active since tempering 
+with 'game_active' might not be a good idea.
+
+25/10/23
+made the menu change the character sprite.
+
+26/10/23
+made instruments object oriented, will work on the time conition for the whole game next time. i did good!
+implemented states! idea from 06/10/23 was valid 👍
+
+27/10/23
+made collision finally!!!!!!!!! 😁😁😁😀😀
+Working on other stages to get an idea of what each stage is gonna look like and stuffs.
+(drawing bgs and collidable things)
+attempts to fix animation need hellp
+
+01/11/23
+migrated important functions 'play_player_animation' and 'collision' and such to 
+core_tools.tools. Then fixed every issue that came with it.
+
+deleted 'player_anim_clock' as i found that it delayed play_player_animation (which i did not want)
+
+02/11/23
+implementations:
+- classroom_image_loader now holds the classes: instrument, Enemy
+- made a start on noise_meter, only got numerical values, still needs work
+- 2/4 enemy sprites completed
+- made new folder for each enemy sprite for organisation 👌
+
+so if i want to add an enemy, i'd have to get the sprites and create an instance of Enemy class
+noise meter scales difficulty, which is the factor that increases enemy speed
+
+issues found:
+- player animating too fast now <- no idea what to do for this one
+- player sprite doesn't change when clicks female in menu <- go through code and re-evaluate things 
+
+04/11/2023
+implementations:
+- 4/4 enemy sprites comleted and enemy movement completed
+- noise meter partialy completed, need sprites
+- added timer and condition to game
+- added a cat (stakeholder said to)
+
+issues:
+- player sprite still doesn't change in menu
+- player still animating too fast
+^minor issues tbh 
+
+Im pretty sure stage_1 is like 80~90% complete, 
+Im tired good night.
+
+05/11/2023
+implementations:
+- added restarting when player dies to someone
+
+issues:
+- player still animating too fast
+^minor issue tbh 
+
+10/11/23:
+implementation:
+- added text above bar minigame
+- migrated minigames into core_tools.minigames for re-use
+- migrated sprites for minigame
+
+issues:
+- player still animating too fast
+^minor issue tbh 
+
+11/11/23:
+basically complete (minor issues still apply)
+ready for status change 😁👌👌
+
+12/11/23:
+defeated animation issue once and for all ❤️
+'''
